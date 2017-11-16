@@ -14,9 +14,12 @@
   "version": "0.3.10",
   "releaseName": "Popcorn is Love",
   "scripts": {
-    "postinstall": "node_modules/.bin/bower install --config.interactive=false && npm run postupdate",
-    "postupdate": "node_modules/.bin/bower update --config.interactive=false",
+    "postinstall": "bower install --config.interactive=false && bower update --config.interactive=false",
+    "postupdate": "bower update --config.interactive=false",
     "test": "gulp test"
+  },
+  "bin": {
+    "popcorn-time": "run.sh"
   },
   "chromium-args": "--enable-node-worker",
   "engines": {
@@ -38,6 +41,7 @@
     "adm-zip": "0.4.7",
     "airplayer": "2.0.0",
     "async": "2.1.2",
+    "bower": "^1.7.9",
     "butter-provider": "0.6.0",
     "butter-provider-anime": "1.0.0",
     "butter-provider-movies": "1.0.3",
@@ -48,6 +52,11 @@
     "defer-request": "0.0.2",
     "dlnacasts": "0.1.0",
     "gitlab": "1.4.1",
+    "git-rev": "^0.2.1",
+    "gulp": "^3.9.1",
+    "gulp-load-plugins": "^1.2.0",
+    "gulp-stylus": "^2.3.1",
+    "run-sequence": "^1.1.5",
     "i18n": "0.x.x",
     "iconv-lite": "0.x.x",
     "jschardet": "1.4.1",
@@ -58,8 +67,10 @@
     "moment": ">=2.11.2",
     "mv": "2.x.x",
     "nedb": "1.8.0",
+    "nib": "^1.1.0",
     "node-captions": "0.4.6",
     "node-webkit-fdialogs": "latest",
+    "nw-builder": "^3.1.2",
     "opensubtitles-api": "4.0.0-rc1",
     "os-name": "2.0.1",
     "popcorn-txt-api": "git+https://github.com/hackhackhack/popcorn-txt-api",
@@ -79,27 +90,19 @@
     "underscore": "1.x.x",
     "urijs": "1.18.3",
     "webtorrent": "^0.98.x",
-    "webtorrent-health": "1.x.x"
+    "webtorrent-health": "1.x.x",
+    "yargs": "^6.4.0"
   },
   "devDependencies": {
-    "bower": "^1.7.9",
     "del": "^2.2.0",
     "jshint": "^2.9.1",
     "jshint-stylish": "^2.1.0",
-    "git-rev": "^0.2.1",
-    "gulp": "^3.9.1",
-    "gulp-stylus": "^2.3.1",
     "gulp-tar": "^1.8.0",
     "gulp-gzip": "^1.2.0",
     "gulp-jshint": "^2.0.0",
     "gulp-jsbeautifier": "^2.0.3",
     "gulp-filter": "^4.0.0",
-    "gulp-load-plugins": "^1.2.0",
     "guppy-pre-commit": "^0.4.0",
-    "nib": "^1.1.0",
-    "nw-builder": "^3.1.2",
-    "run-sequence": "^1.1.5",
-    "stylus": "^0.54.2",
-    "yargs": "^6.4.0"
+    "stylus": "^0.54.2"
   }
 }
