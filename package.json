@@ -84,7 +84,7 @@
     "webtorrent-health": "1.x.x"
   },
   "devDependencies": {
-    "bower": "^1.8.2",
+    "bower": "^1.8.8",
     "del": "^2.x.x",
     "jshint": "^2.9.5",
     "jshint-stylish": "^2.2.1",
